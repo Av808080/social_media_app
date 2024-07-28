@@ -1,7 +1,7 @@
+import HomePage from "@/pages/HomePage"
+
 const Homepage = () => {
-  return (
-    <div className=''>Homepage</div>
-  )
+  return <HomePage />
 }
 
 export default Homepage
