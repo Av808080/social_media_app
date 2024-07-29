@@ -5,7 +5,7 @@ import AddComment from './AddComment'
 
 const Post = () => {
     return (
-        <section className='bg-white shadow-md shadow-slate-400 px-4 py-2 flex flex-col gap-4'>
+        <section className='bg-white shadow-md shadow-slate-400 rounded-md p-4 flex flex-col gap-4'>
             {/* Avatar */}
             <div className='flex justify-between items-center'>
                 <div className='flex gap-4 items-center'>

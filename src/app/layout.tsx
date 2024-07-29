@@ -18,9 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`bg-slate-200 ${inter.className}`} >
         <Navbar />
-        <div className="bg-slate-200 min-h-[calc(100vh-96px)] py-8 px-4 2xl:px-64 xl:px-32 lg:px-16 md:px-8 ">
+        <div className="min-h-[calc(100vh-96px)] py-8 px-4 2xl:px-32 xl:px-24 lg:px-16 md:px-8 max-w-[1800px] mx-auto">
           {children}
         </div>
       </body>

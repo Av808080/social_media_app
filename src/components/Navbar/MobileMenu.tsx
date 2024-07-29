@@ -12,7 +12,7 @@ const MobileMenu = () => {
                 <span className={`w-6 h-1 rounded-xl bg-blue-600 block duration-200 origin-left ${isOpen && "-rotate-45"}`}></span>
             </div>
             {isOpen &&
-                <aside className='h-[calc(100vh-96px)] w-full flex flex-col justify-center items-center gap-4 text-lg font-semibold bg-white absolute top-24 left-0'>
+                <aside className='h-[calc(100vh-96px)] w-full flex flex-col justify-center items-center gap-4 text-lg font-semibold bg-white absolute top-24 left-0 z-20'>
                     <Link href=''>HomePage</Link>
                     <Link href=''>Freinds</Link>
                     <Link href=''>Stories</Link>

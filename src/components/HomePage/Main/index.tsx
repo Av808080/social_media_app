@@ -1,27 +1,29 @@
 import Image from 'next/image'
 import React from 'react'
 import Post from './Post'
+import Profile from '@/components/shared/Profile'
 
 const Main = () => {
     return (
-        <div className='w-full md:w-[70%] lg:w-[50%] flex flex-col gap-8'>
+        <div className='w-full lg:w-[70%] xl:w-[50%] flex flex-col gap-8'>
+            <Profile />
             {/* Stories */}
-            <div className=' bg-white shadow-md shadow-slate-400 min-h-20 flex gap-6 overflow-x-scroll px-4 py-2'>
-                <div className='relative'>
-                    <p className='absolute top-3 left-5 font-bold z-10 text-4xl'>+</p>
+            <div className='rounded-lg bg-white shadow-md shadow-slate-400 min-h-20 flex gap-6 overflow-x-scroll p-4'>
+                <div className='relative w-20 h-18'>
+                    <p className='absolute bottom-[30px] right-5 font-bold z-10 text-4xl'>+</p>
                     <Image className='rounded-full w-20 h-18 opacity-70' src='/image1.jpeg' alt='' width={100} height={100} />
                     <p className='font-semibold text-sm truncate w-16 text-center'>Ronaldosvsvs</p>
                 </div>
                 {[1, 2, 3, 4, 5, 6, 7, 8].map((item => <div key={item}>
-                    <Image className='rounded-full w-20 h-18 border bg-slate-600' src='/image1.jpeg' alt='' width={100} height={100} />
+                    <Image className='rounded-full w-20 h-18 ring bg-slate-600' src='/image1.jpeg' alt='' width={100} height={100} />
                     <p className="font-semibold text-sm truncate w-16 text-center">Ronaldo</p>
                 </div>))}
             </div>
             {/* Add Post */}
-            <div className='flex gap-4 bg-white px-4 py-2 shadow-md shadow-slate-400 rounded-lg max-[410px]:flex-col max-[410px]:items-center'>
+            <div className='flex gap-4 rounded-md bg-white p-4 shadow-md shadow-slate-400 max-[410px]:flex-col max-[410px]:items-center'>
                 {/* Avatar */}
                 <div>
-                    <Image className='rounded-full border bg-slate-600' src='/image1.jpeg' alt='' width={40} height={40} />
+                    <Image className='rounded-full ring bg-slate-600' src='/image1.jpeg' alt='' width={40} height={40} />
                 </div>
                 {/* Form */}
                 <form action={''} className='flex gap-4 flex-1 items-center max-[410px]:flex-col '>
